@@ -1,0 +1,36 @@
+<div class="panel panel-primary bounce">
+
+    <div class="panel-heading" ng-click="fullCollapse()">{{namecard.name}}</div>
+    <div class="panel-body" ng-show="!collapsed">
+        <img src={{namecard.imageUrl}} alt="Smiley face" height="180" width="180" style="float:right" class="img-circle">
+
+        <h5><b>Age:</b></h5>{{namecard.age}}
+        <br>
+
+        <te-address-info></te-address-info>
+        <br>
+        <div ng-hide="zerosize">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h5><b>Friends</b></h5></div>
+                <table class="table container">
+                    <tr ng-repeat="frnd in namecard.friends" class="row">
+                        <td class="col-xs-4">
+                            <li></li>
+                        </td>
+                        <td class="col-xs-4">{{frnd}}</td>
+                        <td style="position:relative" class="col-xs-4">
+                            <te-remove-friend method="removeFriend(frnd)"></te-remove-friend>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div ng-show="!!namecard.status">
+            <h3> <span class="label label-success"> Status:{{namecard.status}} </span></h3>
+        </div>
+
+        <button class="btn btn-warning" ng-hide="!!namecard.status" ng-click="endorse(namecard)">ENDORSE</button>
+
+    </div>
+</div>

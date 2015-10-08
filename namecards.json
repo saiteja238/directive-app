@@ -1,0 +1,40 @@
+namecard: [
+    {
+        name: "sai teja",
+        age: "22",
+        address: {
+            street: "sainikpuri",
+            area: "gokul nagar",
+            location: "hyderabad",
+            state: "telangana"
+        },
+        friends: ["karthik", "santosh", "sanith"],
+        status:""
+    },
+    {
+        name: "ravi teja",
+        age: "25",
+        address: {
+            street: "qqqqqq",
+            area: "wwww nagar",
+            location: "eee",
+            state: "telangana"
+        },
+        friends: ["qqq", "www", "eee"],
+        status:""
+    },
+    {
+        name: "AAA teja",
+        age: "30",
+        address: {
+            street: "aaaaaaa",
+            area: "ssss nagar",
+            location: "ddd",
+            state: "telangana"
+        },
+        friends: ["aaa", "sss", "ddd"],
+        status:""
+    },
+
+
+]
